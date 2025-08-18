@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NumberSumApp</string>
+    <string name="hint_number1">Enter first number</string>
+    <string name="hint_number2">Enter second number</string>
+    <string name="btn_sum">Calculate Sum</string>
+    <string name="btn_reset">Reset</string>
+    <string name="result_text">Result: </string>
+</resources>
