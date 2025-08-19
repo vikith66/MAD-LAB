@@ -1,0 +1,20 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">User Info App</string>
+
+    <!-- Hints / Labels -->
+    <string name="hint_name">Enter your name</string>
+    <string name="hint_email">Enter your email</string>
+    <string name="btn_submit">Submit</string>
+    <string name="btn_reset">Reset</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="hobby_reading">Reading</string>
+    <string name="hobby_traveling">Traveling</string>
+    <string name="hobby_sports">Sports</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_name">Please enter your name</string>
+    <string name="toast_email">Please enter your email</string>
+    <string name="toast_submitted">Details Submitted!</string>
+</resources>
