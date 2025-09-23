@@ -1,0 +1,79 @@
+package com.example.colormenuapp;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
+import android.graphics.Color;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Button;
+
+public class MainActivity extends AppCompatActivity {
+
+    Toolbar toolbar;
+    Button colorButton;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        colorButton = findViewById(R.id.colorButton);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_colors, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.action_red) {
+            colorButton.setBackgroundColor(Color.RED);
+            return true;
+        } else if (id == R.id.action_green) {
+            colorButton.setBackgroundColor(Color.GREEN);
+            return true;
+        } else if (id == R.id.action_blue) {
+            colorButton.setBackgroundColor(Color.BLUE);
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+}
+
+
+ <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:title="Color Menu App"
+        android:titleTextColor="@android:color/white"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+   <?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_red"
+        android:title="Red" />
+
+    <item
+        android:id="@+id/action_green"
+        android:title="Green" />
+
+    <item
+        android:id="@+id/action_blue"
+        android:title="Blue" />
+
+</menu>
