@@ -1,0 +1,3 @@
+9. Create an android application to display a list of bank names in a spinner and
+when you select the particular bank name, the logo and IFSC-code of the selected
+bank should be displayed using custom toast
